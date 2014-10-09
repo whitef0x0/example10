@@ -13,33 +13,27 @@ public class Square extends Rectangle {
 	}
 
 	/**
-	 * Set the length of the square This method overrides the setLength( int )
-	 * method in the superclass
+	 * Set the length of the square. This method overrides the setLength( int )
+	 * method in the superclass. Because this method is for a Square, it also
+	 * sets the width appropriately.
 	 * 
 	 * @param l
 	 *            the new length of the square, l > 0
 	 */
 	public void setLength(int l) {
-		// let us call the appropriate method in the superclass
-		super.setLength(l);
-
-		// but this is a square so the length should equal the width
-		super.setWidth(l);
+		setSide( l );
 	}
 
 	/**
-	 * Set the width of the square This method overrides the setWidth( int )
-	 * method in the superclass
+	 * Set the width of the square. This method overrides the setWidth( int )
+	 * method in the superclass. Because this method is for a Square, it also
+	 * sets the length appropriately.
 	 * 
 	 * @param w
 	 *            the new width of the square, w > 0
 	 */
 	public void setWidth(int w) {
-		// let us call the appropriate method in the superclass
-		super.setWidth(w);
-
-		// but this is a square so the length should equal the width
-		super.setLength(w);
+		setSide( w );
 	}
 
 	// let us add a new method to set the side of the square
