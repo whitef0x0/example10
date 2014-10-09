@@ -4,7 +4,7 @@ Example 10: Squares and Rectangles (or, Why Subclassing is not Subtyping)
 
 In Java, we can create a new class by `extend`ing an existing class. The new class is called a subclass of the original class (which is then called the superclass).
 
-This is one mechanism in Java to create subtypes but subclassing does not ensure that the new class is a subtype of the original class. This example demonstrates how this can happen.
+This is one mechanism in Java to create subtypes but subclassing does not ensure that the new class is a subtype of the original class. This example demonstrates how this mismatch (_subclass but not subtype_) can happen.
 
 The first class is a `Rectangle`:
 
