@@ -25,14 +25,17 @@ public class Rectangle {
 	}
 
 	/**
-	 * Set the length of the rectangle
+	 * Set the length of the rectangle and return new Rectangle object
 	 * 
 	 * @param l
 	 *            the new length of the rectangle, l > 0
+	 * @returns
+	 * 	       a new Rectangle with the same width and new length l, if l > 0
 	 */
-	public void setLength(int l) {
+	public Rectangle setLength(int l) {
 		if (l > 0)
-			length = l;
+			return new Rectangle(l, this.w);
+                return new Rectangle(this.l, this.w);
 	}
 
 	/**
@@ -40,10 +43,13 @@ public class Rectangle {
 	 * 
 	 * @param w
 	 *            the new width of the rectangle, w > 0
+	 * @returns   
+	 * 	      a new Rectangle with the same length and new width w if w>0
 	 */
-	public void setWidth(int w) {
+	public Rectangle setWidth(int w) {
 		if (w > 0)
-			width = w;
+			return new Rectangle(this.l, w);
+                return new Rectangle(this.l, this.w);
 	}
 
 	/**
