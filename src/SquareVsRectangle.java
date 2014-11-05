@@ -16,10 +16,7 @@ public class SquareVsRectangle {
 		System.out.println( "The area of the square is " + s.getArea( ) ); // we should see 100
 		
 		// Square is a subclass of Rectangle, so Java permits the following:
-		Rectangle r = s;
-		
-		r.setLength( 12 );
-		r.setWidth( 15 );
+		Rectangle r = new Rectangle(12, 15);
 		
 		// let us test the area method
 		// If r were a rectangle then we should get 180
